@@ -1,0 +1,836 @@
+/* 
+Author Name: Zulkar Nayin
+Author Website: https://zulkar.me
+Theme name: Sysmlex VPN
+*/
+
+/*
+01.Global css
+02.Header CSS
+03.Hero CSS
+03.Download CSS
+04.
+05.
+06.
+07.
+08.
+
+09.
+10.Footer CSS
+
+
+ */
+/*
+/* 01.Global css*/
+:root{
+--main-bg-color: red;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');*/
+
+*{
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+ 
+a{
+  color: black;
+}
+a:hover{
+  color: red;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/*Global css End */
+
+
+
+
+/* 02.Header CSS */
+header{
+  height: 7.5rem;
+  width: 100%;
+  box-shadow: 0 0.25rem #f5f5f5;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 999;
+  background: white;
+  display: block;
+  margin-bottom: 7.5rem !important;
+}
+
+.main-logo {
+margin-top: 38px;
+    position: relative;
+}
+#main-menu{
+float: right;
+}
+#main-menu ul{
+  margin: 3.438rem 0 0 0;
+}
+#main-menu ul li{
+  list-style: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 1.5625rem 0.625rem 1.5625rem;
+}
+
+#main-menu ul li:hover{
+  border-bottom: 4px solid var(--main-bg-color);
+}
+#main-menu ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* 03.Hero CSS  */
+.Hero-area{
+    height: auto;
+    position: relative;
+    margin-top: 7.5rem;
+
+}
+.hero-svg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-right {
+    text-align: right;
+    padding:9.6875rem 0 0 0;
+}
+.hero-btn {
+	font-size: 18px;
+	font-weight: bold;
+	border-top-right-radius: 26px;
+  border-bottom-left-radius: 26px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+	padding: 10px 30px;
+	float: right;
+	background-color: var(--main-bg-color);
+	color: white;
+}
+.Hero-title p {
+    font-size: 2.625rem;
+    font-weight: bold;
+}
+
+.hero-content {
+    margin-bottom: 6.0625rem;
+}
+.hero-content p{
+  font-size: 1.125rem;
+  justify-content: center;
+  margin-left: 3rem;
+}
+.hero-image{
+    padding:3.6875rem 0;
+    margin-top: 1rem;
+    
+}
+
+/* 03.Download CSS */
+
+.download{
+    background-repeat: no-repeat;
+    padding: 7rem 0rem;
+    position: relative;
+    z-index: 444 !important;
+}
+.down-arrow {
+    font-size: 40px;
+    position: absolute;
+}
+
+
+.download-icon ul li img {
+    height: 50%;
+    width: 50%;
+}
+
+.download:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url('./images/map-small.webp');
+    z-index: -2;
+    opacity: .1;
+}
+
+.download::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+   
+    z-index: -3;
+
+}
+.download-btn {
+    background-color: white;
+    height: 3rem;
+    line-height: 3rem;
+    width: 22.625rem;
+    margin: 2px 0;
+    border-radius: 30px;
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#submenu{
+    display: none;
+}
+#submenu a {
+    background-color: white;
+    display: block;
+    width: 20.625rem;
+    height: 3rem;
+    border-radius: 30px;
+    margin-bottom: 1px;
+    font-weight: 700;
+    line-height: 3rem;
+
+
+   }
+.main-download{
+    position: relative;
+    width: 22.625rem;
+}
+.download-btn:hover{
+  color: red;
+}
+.download-left {
+    text-align: center;
+    color: white;
+ 
+}
+
+.download-title p {
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height:56px;
+}
+.download-icon ul{
+    display: flex;
+    justify-content: center;
+  
+}
+.download-icon ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 3rem;
+
+}
+
+.download-subtitle p {
+    font-size: 1.125rem;
+    margin-bottom: 6rem;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.down-arrow {
+    font-size: 2.0625rem;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    color: black;
+    display: inline-block;
+    width: 5rem;
+    cursor: pointer;
+}
+.down-arrow:hover{
+    color: red;
+}
+
+
+/* 09.About CSS start*/
+.About{
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+
+}
+.About-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.about-color-change{
+color:var(--main-bg-color);
+}
+.About-content{
+  border-left: 4px solid var(--main-bg-color);
+  padding-left: 10px;
+  margin-top: 8%;
+}
+
+
+/* 10.Footer CSS start*/
+footer{
+background-color:#ebebeb;
+height: 15rem;
+padding-top: 2rem;
+}
+
+
+.footer-title p{
+font-size: 18px;
+font-weight: bold;
+padding-left: 2.4rem;
+}
+
+
+.footer-ui ul li {
+  list-style: none;
+}
+
+.footer-social-icon ul li {
+	display: inline;
+  padding: 0 0.4rem;
+
+}
+
+.footer-social-icon ul li img{
+  height: 2rem;
+  width: 2rem;
+}
+
+/*Counter CSS */
+.counter{
+height: 33.75rem;
+background-color: var(--main-bg-color);
+color: white;
+display: flex;
+align-items: center;
+margin-top: 2rem;
+}
+
+.counter-block-section{
+padding-bottom: 4rem;
+}
+
+.counter-title p{
+  font-size: 2.625rem;
+  font-weight: bold;
+}
+
+.counter-sub-title{
+  padding-bottom: 3.4375rem;
+  font-size: 1.125rem;
+}
+
+.Counter-single-block{
+  border-left: 4px solid white;
+  padding-left: 5px;
+  display: inline-block;
+
+}
+
+
+.counter-download{
+font-size: 18px;
+font-weight: bold;
+}
+
+.Counter-number p{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+
+.counter-text{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Pricing CSS */
+.price-page{
+    margin-top: 7.5rem;
+}
+
+.pricing-title p{
+  font-size: 2.8125rem;
+  font-weight: bold;
+  padding-bottom: 4.375rem;
+  color: #3d3d3d;
+}
+
+.pricing-single{
+height: auto;
+background-color:#c5c5c5;
+padding: 2.125rem 0;
+border-top-right-radius: 100px;
+border-bottom-left-radius:100px;
+margin: 0 1.1rem;
+
+}
+.pricing-single:hover{
+  transition: transform .9s;  
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+}
+
+.pricing-discount p{
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 65%;
+  position: relative;
+  padding-left: .6rem;
+border-bottom-left-radius: 20px;
+  margin-left: -1rem;
+}
+
+
+
+.pricing-top-text p{
+display: block;
+font-size: 1.25rem;
+padding-top: 2rem;
+font-weight: 600;
+}
+
+.pricing-price{
+font-size: 3.75rem;
+font-weight: bolder;
+padding-bottom: 1.8rem;
+}
+
+
+
+.pricing-btn{
+  background-color:#ffffff;
+  border-radius: 25px;
+  font-weight: 900;
+  font-size: 1.375rem;
+  padding: 0 20px;
+}
+.pricing-btn:hover{
+    border: 1px solid black;
+}
+.pricing-extend{
+  padding: 4.875rem 0;
+
+}
+
+.pricing-extend-btn {
+	background-color: #c5c5c5;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: bold;
+  padding: .3rem 2rem;
+  text-transform: uppercase;
+}
+.pricing-extend-btn:hover{
+  background-color: red;
+  color: white;
+}
+.pricing-extend-btn img{
+    height: .7rem;
+}
+.pricing-footer-content p{
+padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+/*Features CSS */
+.features{
+    padding: 7rem 0;
+
+}
+.features-image img{
+height: 500px;
+}
+
+.feature-title p {
+	font-size: 2.625rem
+}
+.features-single-title p {
+	font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.features-image {
+  padding: 3rem 0;
+  position: relative;
+}
+#Features{
+  position: absolute;
+  bottom:  10rem;
+  left:0;
+  right: 0;
+}
+
+.single-features {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/*Access CSS*/
+.access-area{
+  margin-top: 5rem;
+height:25rem;
+color: white;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: relative;
+    z-index: 444;
+
+}
+.access-area::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/connect-map.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    opacity: .15;
+    z-index: -4;
+
+}
+.access-area::after{
+    position: absolute;
+    background-color: var(--main-bg-color);
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+ 
+    z-index: -5;
+}
+.access-title p {
+	font-size: 2.625rem;
+	font-weight: bold;
+	
+}
+
+.access-sub-title p {
+	font-size: 1.875rem;
+}
+
+
+
+/* Affiliate CSS Code */
+.Affiliate{
+  margin-top:7.5rem;
+}
+.affiliate-color{
+	background-color: #f1f2f2;
+}
+.affiliate-input-form {
+	display: block;
+	width: 100%;
+	border-radius: 30px;
+  height: 3rem;
+  outline: none;
+ 
+  padding-left: 2rem;
+  border: none;
+}
+
+.affiliate-program {
+	padding: 5rem 0;
+}
+
+.affiliate-title {
+	color: var(--main-bg-color);
+	border-bottom: 2px solid gray;
+	display: inline-block;
+	line-height: 4rem;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.affiliate-content-title {
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding-bottom: 1rem;
+}
+.affiliate-form-title p {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.affiliate-why ul li {
+	list-style: none;
+	line-height: 2.5rem;
+}
+
+.affiliate-form {
+	background-color: var(--main-bg-color);
+	color: white;
+	padding: .8rem 3rem;
+
+  border-radius: 6px;
+}
+.affiliate-form-title{
+  position: relative;
+}
+
+.affiliate-form-title::after {
+ position: absolute;
+content: "";
+background-color: white;
+height: .2rem;
+width: 3rem;
+left: 45%;
+bottom: 1px;
+
+}
+
+.affiliate-why ul li img {
+	height: 1rem;
+	width: 1rem;
+}
+
+
+.affiliate-button {
+	background: white;
+	padding: .6rem 4rem;
+	border-radius: 1.875rem;
+  text-align: center;
+  display: block;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color:var(--main-bg-color);
+  text-decoration: none !important;
+  font-weight: bold;
+  border: none;
+  margin-left: 14%;
+}
+
+
+
+
+.affiliate-reseller-title p {
+	font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  margin: 3rem 0;
+}
+
+.affiliate-reseller-title p::after{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  bottom: -5px;
+  left: 46%;
+  background-color: #f1f2f2;
+}
+
+
+
+
+
+/*css code for mobile menu*/
+.mobile-menu-toggle{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    *{font-size: 12px}
+    /*Mobile menu Code */
+    .main-logo{
+      margin-top: 10px;
+    }
+    .main-logo img{
+      width: 45%;
+      margin-left: .7rem;
+    }
+    .mobile-menu-toggle{
+        display: inline-block;
+        cursor: pointer;
+        color: var(--main-bg-color);
+    }
+    header{
+        box-shadow: none;
+        background: transparent;
+    }
+    .main-logo{
+        background-color: white;
+    }
+    #main-menu{
+      display: none;
+    }
+    #main-menu ul{
+        margin: 0;
+    }
+  #main-menu ul li {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    padding: .5rem 2rem;
+    background-color: white;
+    text-align: right;
+  }
+
+  #main-menu ul li:hover{
+    background-color: red;
+  }
+    .change-color{
+        background-color: transparent;
+    }
+
+footer, .Pricing, .hero-image, .counter, header{
+ height: auto;
+}
+/*hero area css*/
+  .hero-right{
+    text-align: center;
+  }
+  .hero-content p{
+    margin-left: 0;
+  }
+  .center-btn{
+display: flex;
+justify-content: center;
+  }
+    .Hero-area{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .Hero-title p{
+      font-size: 2.3rem;
+      line-height: 2.5rem;
+      margin-block: 3rem;
+    }
+    .hero-content{
+        margin-bottom:3rem;
+    }
+    .hero-image{
+        padding: 0;
+    }
+    .hero-right{
+      padding: 3.6875rem 0 0 0;
+    
+    }
+    .features-image img{
+        height: 300px;
+    }
+/* About responsive*/
+    .About-logo{
+        text-align: center;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+.flex-box-css{
+  display: flex;
+  text-align: center;
+}
+.footer-title p{
+  padding-left: 0;
+}
+.footer-ui ul{
+padding-left: 0;
+}
+    /*Counter Responsive */
+    .counter-full-width {
+        display: block;
+    }
+    .counter{
+      padding: 26px 20px;
+    }
+    .Counter-number p{
+      font-size: 28px;
+    }
+    .counter-download img {
+      width: 42%;
+      margin-top: 1rem;
+    }
+    /*Pricing responsive */
+    .pricing-single{
+        margin: 1rem 20px;
+    }
+    .counter-title p{
+      font-size: 2rem;
+    }
+    .Download-showcase{
+      display: none;
+    }
+  
+    /*access responsive */
+
+    .access-title p{
+      
+      font-size: 2rem;
+  }
+  .access-content p {
+    padding: 0 22px;
+    margin-top: 1rem;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Counter-single-block{
+    margin-left: 8rem;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+
+  .Counter-number p{
+    font-size: 60px;
+  }
+
+  .counter-text p{
+    font-size: 30px;
+  }
+  
+}
+
